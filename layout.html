@@ -12,9 +12,34 @@
     <title>AULA 5</title>
 </head>
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
     <header>
-        <img src= "imagem/FATEC_ZONA_LESTE.png" alt="Imagem com a palara Fatec em cinza e a expressão Zona Leste em vermelho em HTML.">
+        <div id="Acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodape[3]</a></li>
+
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">Acessibilidade</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">Contraste preto</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem-contraste">Sem Contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A-</a></li>
+            </ul>
+        </div>
+        <img src= "imagem/FATEC_ZONA_LESTE.png" width="400" height="300" alt="Imagem com a palara Fatec em cinza e a expressão Zona Leste em vermelho em HTML.">
         <nav>
+            <label for="bt_menu"> <img src="Imagem/FATEC_ZONA_LESTE.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
             <ul id="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
@@ -32,6 +57,15 @@
     </header>
     <main>
         <h1>ELEMENTOS DE LAYOUT</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>layout</li>
+        </ul>
+        <audio controls>
+            <source src="audio/layout.mp3" type="audio/mp3">
+            Seu navegador não suporta esse arquivo.
+        </audio> 
+        <section>
         <p>&lt;header&gt; - Define um cabeçalho para um documento ou seção.</p>
         <p>&lt;nav&gt; - Define um contêiner para links de navegação.</p>
         <p>&lt;section&gt; - Define uma seção em um documento.</p>    
@@ -39,7 +73,7 @@
         <p>&lt;aside&gt; - Define o conteúdo além do conteúdo(como uma barra lateral).</p>
         <p>&lt;footer&gt; - Define um rodapé para um documento ou seção. </p>
             <img src="imagem/layout.png" alt= "Imagem mostrando as tags de layout.">
-        
+        </section>
     <footer>
         <p>Desenvolvido por Fernando José da Silva &copy; 2021.</p>
     </footer>

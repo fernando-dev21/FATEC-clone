@@ -10,10 +10,37 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <title>AULA 5</title>
+    <audio controls>
+        <source src="audio/comentarios.mp3" type="audio/mp3">
+        Seu navegador não suporta esse arquivo.
+    </audio> 
 </head>
 <body>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
     <header>
-        <img src= "imagem/FATEC_ZONA_LESTE.png" alt="Imagem com a palara Fatec em cinza e a expressão Zona Leste em vermelhoem HTML.">
+        <div id="Acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodape[3]</a></li>
+
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">Acessibilidade</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">Contraste preto</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem-contraste">Sem Contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A-</a></li>
+            </ul>
+        </div>
+        <img src= "imagem/FATEC_ZONA_LESTE.png" width="400" height="300" alt="Imagem com a palara Fatec em cinza e a expressão Zona Leste em vermelhoem HTML.">
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Inicio</a></li>
